@@ -1,0 +1,86 @@
+{
+  "manifest_version": 3,
+  "name": "Antifeed",
+  "description": "Free your mind from the grip of social media by removing algorithmically selected content",
+  "version": "1.0",
+  "action": {
+    "default_icon": "images/antifeed-128.png",
+    "default_title": "Antifeed Social Media Blocker",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "downloads",
+    "notifications",
+    "scripting",
+    "sidePanel",
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  "icons": {
+    "16": "images/antifeed-16.png",
+    "32": "images/antifeed-32.png",
+    "48": "images/antifeed-48.png",
+    "128": "images/antifeed-128.png"
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "16": "images/antifeed-16.png",
+      "32": "images/antifeed-32.png"
+    },
+    "default_title": "Antifeed Social Media Blocker",
+    "default_panel": "panel.html"
+  },
+  "side_panel": {
+    "default_icon": {
+      "16": "images/antifeed-16.png",
+      "32": "images/antifeed-32.png"
+    },
+    "default_title": "Antifeed Social Media Blocker",
+    "default_path": "panel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bluesky.com/*",
+        "*://*.facebook.com/*",
+        "*://*.twitter.com/*",
+        "*://*.instagram.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.pinterest.com/*",
+        "*://*.reddit.com/*",
+        "*://*.snapchat.com/*",
+        "*://*.substack.com/*",
+        "*://*.threads.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.tumblr.com/*",
+        "*://*.twitch.tv/*",
+        "*://*.x.com/*",
+        "*://*.youtube.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "*://*.bluesky.com/*",
+    "*://*.facebook.com/*",
+    "*://*.twitter.com/*",
+    "*://*.instagram.com/*",
+    "*://*.linkedin.com/*",
+    "*://*.pinterest.com/*",
+    "*://*.reddit.com/*",
+    "*://*.snapchat.com/*",
+    "*://*.substack.com/*",
+    "*://*.threads.com/*",
+    "*://*.tiktok.com/*",
+    "*://*.tumblr.com/*",
+    "*://*.twitch.tv/*",
+    "*://*.x.com/*",
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

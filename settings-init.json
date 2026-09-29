@@ -1,0 +1,86 @@
+{
+  "Facebook": {
+    "open": false,
+    "block": true,
+    "blockFeeds": {
+      "Main Feed": true,
+      "Reels": true,
+      "Stories": true,
+      "Marketplace": true
+    },
+    "domain": "facebook.com",
+    "whitelistSrc": "",
+    "whitelist": {}
+  },
+  "Instagram": {
+    "open": false,
+    "block": true,
+    "blockFeeds": {
+      "Main Feed": true,
+      "Reels": true,
+      "Stories": true,
+      "Explore": true
+    },
+    "domain": "instagram.com",
+    "whitelistSrc": "",
+    "whitelist": {}
+  },
+  "Linkedin": {
+    "open": false,
+    "block": true,
+    "blockFeeds": {
+      "Main Feed": true,
+      "LinkedIn News": true
+    },
+    "domain": "linkedin.com",
+    "whitelistSrc": "",
+    "whitelist": {}
+  },
+  "Reddit": {
+    "open": false,
+    "block": true,
+    "blockFeeds": {
+      "Main Feed": true,
+      "News Feed": true,
+      "Games on Reddit": true
+    },
+    "domain": "reddit.com",
+    "whitelistSrc": "",
+    "whitelist": {}
+  },
+  "Threads": {
+    "open": false,
+    "block": true,
+    "blockFeeds": {
+      "Main Feed": true
+    },
+    "domain": "threads.com",
+    "whitelistSrc": "",
+    "whitelist": {}
+  },
+  "Twitter/X": {
+    "open": false,
+    "block": true,
+    "blockFeeds": {
+      "Main Feed": true,
+      "Today's News": true,
+      "What's Happening": true
+    },
+    "domain": "x.com",
+    "whitelistSrc": "",
+    "whitelist": {}
+  },
+  "Youtube": {
+    "open": false,
+    "block": true,
+    "blockFeeds": {
+      "Homepage": true,
+      "Shorts": true,
+      "Endcard Suggestions": true,
+      "Sidebar Suggestions": true
+    },
+    "domain": "youtube.com",
+    "whitelistSrc": "",
+    "whitelist": {}
+  }
+}
